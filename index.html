@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RxFlow - Pharmacy Prescription Workflow</title>
+    <meta
+      name="description"
+      content="RxFlow is a B2B SaaS web app for independent pharmacies to manage prescription workflow, patient data, and inventory with audit-ready tracking."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">
+          <span class="logo-dot"></span>
+          RxFlow
+        </a>
+        <nav class="nav">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#integrations">Integrations</a>
+          <a href="#model">Business model</a>
+        </nav>
+        <button class="cta ghost">Request a demo</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">RxFlow for Pharmacies</p>
+            <h1>Run every prescription through a clear, auditable workflow.</h1>
+            <p class="lead">
+              RxFlow is a B2B SaaS web application for independent and community
+              pharmacies. Manage intake to pickup, patient and prescriber
+              records, and inventory with lot and expiry monitoring.
+            </p>
+            <div class="hero-actions">
+              <button class="cta primary">Request a demo</button>
+              <button class="cta secondary">View workflow</button>
+            </div>
+            <div class="hero-metrics">
+              <div>
+                <span class="metric">Role-based access</span>
+                <span class="metric-label"
+                  >Tech, pharmacist, and admin controls</span
+                >
+              </div>
+              <div>
+                <span class="metric">Audit-ready logs</span>
+                <span class="metric-label">Track who did what and when</span>
+              </div>
+              <div>
+                <span class="metric">Interoperability</span>
+                <span class="metric-label"
+                  >openFDA and FHIR-ready data feeds</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card-header">
+              <span class="pulse"></span>
+              <span>Prescription Flow</span>
+              <span class="chip">Live</span>
+            </div>
+            <div class="card-body">
+              <div class="signal">
+                <span class="signal-title">Queue Status</span>
+                <span class="signal-value">New → Ready</span>
+                <span class="signal-trend up">FSM enforced</span>
+              </div>
+              <div class="signal">
+                <span class="signal-title">Inventory Alerts</span>
+                <span class="signal-value">Low stock</span>
+                <span class="signal-trend down">Expiry watch</span>
+              </div>
+              <div class="signal">
+                <span class="signal-title">Audit Log</span>
+                <span class="signal-value">Verified</span>
+                <span class="signal-trend up">User + timestamp</span>
+              </div>
+              <div class="forecast">
+                <div>
+                  <span class="forecast-title">Workflow Summary</span>
+                  <span class="forecast-value">All queues</span>
+                </div>
+                <button class="cta ghost small">Open dashboard</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Product overview</p>
+            <h2>One system for prescriptions, patients, and inventory.</h2>
+            <p>
+              RxFlow centralizes prescription workflow, patient and prescriber
+              records, and drug inventory in a modern web application. It
+              connects to external drug data feeds and transaction exchange
+              simulations to demonstrate realistic interoperability while
+              reducing implementation risk.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Value propositions</p>
+            <h2>Built for speed, safety, and accountability.</h2>
+            <p>
+              RxFlow reduces bottlenecks, prevents inventory waste, and keeps
+              every step traceable for compliance.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Queue visibility</h3>
+              <p>Clear status tracking from New to Picked Up.</p>
+              <span class="tag">Workflow</span>
+            </article>
+            <article class="feature-card">
+              <h3>Inventory control</h3>
+              <p>Lot and expiry monitoring with low-stock alerts.</p>
+              <span class="tag">Inventory</span>
+            </article>
+            <article class="feature-card">
+              <h3>Auditability</h3>
+              <p>User, action, entity, and timestamp logging for every step.</p>
+              <span class="tag">Compliance</span>
+            </article>
+            <article class="feature-card">
+              <h3>Interoperability</h3>
+              <p>openFDA drug catalog feeds and FHIR eRx simulations.</p>
+              <span class="tag">Integration</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">How it works</p>
+            <h2>Finite-state workflow built for pharmacy teams.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Intake</h3>
+              <p>
+                Log in by role, pull new prescriptions, and review patient data.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Processing</h3>
+              <p>
+                Enter fill details, select lots, and update inventory counts.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Verification</h3>
+              <p>Pharmacist review advances the status to Ready.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Pickup</h3>
+              <p>Mark as Picked Up and generate receipts with audit trails.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="integrations" class="section">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">External systems</p>
+            <h2>Connected to the data pharmacies rely on.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>openFDA</h3>
+              <p>Drug and NDC catalog data imported into RxFlow.</p>
+              <span class="tag">Data feed</span>
+            </article>
+            <article class="feature-card">
+              <h3>HAPI FHIR</h3>
+              <p>Simulated e-prescription exchange via MedicationRequest.</p>
+              <span class="tag">FHIR</span>
+            </article>
+            <article class="feature-card">
+              <h3>Payments</h3>
+              <p>Subscription billing via standard payment gateways.</p>
+              <span class="tag">Billing</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="model" class="section">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Business model</p>
+            <h2>SaaS subscriptions with scalable add-ons.</h2>
+            <p>
+              RxFlow is sold per pharmacy location and/or per user seat, with
+              tiered plans for advanced reporting, audit logs, and integrations.
+              Approved vendors can advertise within the platform as an optional
+              revenue stream.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Subscription SaaS</h3>
+              <p>Recurring monthly or annual fees per location or seat.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Tiered add-ons</h3>
+              <p>
+                Premium analytics, extended data retention, and integrations.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Advertising</h3>
+              <p>Approved vendors promote services inside the platform.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-panel">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Ready to modernize?</p>
+            <h2>Give your pharmacy a single, traceable workflow.</h2>
+            <p>
+              Replace fragmented tools with a secure, web-based command center.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <button class="cta primary">Request a demo</button>
+            <button class="cta ghost">Talk to sales</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>RxFlow</span>
+        <div class="footer-links">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#model">Business model</a>
+        </div>
+        <span>© 2026 RxFlow</span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
